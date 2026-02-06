@@ -1,0 +1,14 @@
+{
+    "name": "Choply Shop",
+    "short_name": "Choply",
+    "description": "Votre plateforme e-commerce mobile et web",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#1a73e8",
+    "theme_color": "#1a73e8",
+    "icons": [
+      { "src": "images/logo.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "images/logo.png", "sizes": "512x512", "type": "image/png" }
+    ]
+  }
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choply Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a73e8">
+</head>
+<body>
+
+<header>
+    <h1><img src="logo.jpg" alt="Logo"> Choply Shop</h1>
+    <nav>
+        <a onclick="scrollToSection('accueil')">Accueil</a>
+        <a onclick="scrollToSection('apropos')">À propos</a>
+        <a onclick="scrollToSection('marchandise')">Marchandises</a>
+        <a onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+</header>
+
+<!-- Accueil -->
+<div id="accueil" class="banner">
+    Bienvenue sur Choply! <br> Explorez, choisissez, commandez facilement!
+</div>
+
+<!-- À propos -->
+<section id="apropos">
+    <h2>À propos de Choply</h2>
+    <p>Choply Shop est votre plateforme e-commerce mobile et web. Découvrez et commandez des produits facilement, où que vous soyez. Votre shopping, simplifié et rapide.</p>
+</section>
+
+<!-- Marchandises -->
+<section id="marchandise">
+    <h2>Nos produits</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="rolex - Copie.jpg" alt="Produit 1">
+            <h3>Produit 1</h3>
+            <p>Prix : 25$</p>
+            <a href="https://wa.me/0832521466?text=Je%20voudrais%20commander%20Produit%201"><button>Commander</button></a>
+        </div>
+        <div class="product-card">
+            <img src="rolex grise.jpg" alt="Produit 2">
+            <h3>Produit 2</h3>
+            <p>Prix : 40$</p>
+            <a href="https://wa.me/0832521466?text=Je%20voudrais%20commander%20Produit%202"><button>Commander</button></a>
+        </div>
+        <div class="product-card">
+            <img src="rolex noir.jpg" alt="Produit 3">
+            <h3>Produit 3</h3>
+            <p>Prix : 15$</p>
+            <a href="https://wa.me/0832521466?text=Je%20voudrais%20commander%20Produit%203"><button>Commander</button></a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute question ou commande spéciale, contactez-nous via WhatsApp :</p>
+    <p>
+        <a href="https://wa.me/+243832521466" target="_blank"> +243 832521466</a> | 
+        <a href="https://wa.me/+243972349714" target="_blank"> +243 972349714</a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Choply - Tous droits réservés
+</footer>
+
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then(() => console.log('Service Worker enregistré'))
+    .catch(err => console.log('Erreur Service Worker:', err));
+}
+</script>
+</body>
+</html>
